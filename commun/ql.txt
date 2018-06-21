@@ -1,0 +1,38 @@
+dossier 1 :
+
+
+Q3 : select nop , surface 
+from places p , categories c , occupations o , marchands m 
+
+where p.nop=c.nocat and 
+p.nop=o.nopp and 
+o.noMM=m.noM and 
+c.priJ=20 and 
+p.distance <=100  and 
+m.nomM='superrette du village'
+ 
+Q4 : 
+select * from places 
+where noP not in ( select noPP from occupations where date_occup >= '2015-03-01')
+
+
+Q5 :
+select noP from  places where distance <= all(select distance from  places p , occupations o , marchands m  where p.noP = o.noPP and o.noMM=m.noM and m.nomM='superette du village'
+
+Q6
+select sum(surface ) from places where noP not in (selcet noPP from occupations)
+
+
+Q11 :
+select avg(c.prixJ) from categories c , occupations  o  , places p , marchands m 
+where c.noCat=p.noCat and 
+p.noP= o.noPP and  
+o.noMM = m.noM and 
+m.nomM=33
+
+
+Q12 : 
+
+select noP , decode (sign(100-c.prixJ),1,0,1,-1,2) "type" 
+from places p , categories c  
+where c.noCat=p.noCat 
