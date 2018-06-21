@@ -1,0 +1,29 @@
+question 1 : 
+SOAP est  Simple Object Access Protocol
+SOAP est un protocole de communication basé sur XML pour permettre aux applications de s'échanger des informations via HTTP. Il permet ainsi l'accès aux services web et l'interopérabilité des applications à travers le web. SOAP est un protocole simple et léger et qui repose entièrement sur des standars établis comme le HTTP et XMl. Il est portable et donc indépendant de tous système d'exploitation et du type d'ordinateur. SOAP est une spécification non propriétaire. 
+
+question 2 :
+avantages : 
+
+facilite la communication
+évite les problèmes de proxys et pare-feu par rapport à des technologies plus anciennes.
+HTTP est populaire 
+HTTP est supporté  par tous les navigateurs et serveurs 
+
+inconvenients :
+
+Sécurité moins évoluée
+
+HTTP n'a pas été  pas conçu pour tout type  d'application,   de différentes technologies et différents langages de programmation  
+
+question 3 :
+
+strtolower($debutVille) : Retourne la chaine de caractère  en  miniscule  de $debutVille
+strlen($debutVille) retourne la longueur (nombre de caractères) de la chaine $debutVille 
+stristr($debutVille, substr($name, $lenN, $len)) recherche ,sans la sous chaine $debutVille dans la sous chaine 
+qui commence du caractère numéro $lenN à $len dans la chaine $name.
+stristr est insensible  à la casse.
+
+question 4 :
+
+rôle : afficher les adresses qui contiennent le début du   nom de la ville passer dans la requête du client 
